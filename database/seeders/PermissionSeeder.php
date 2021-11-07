@@ -72,6 +72,14 @@ class PermissionSeeder extends Seeder
             'reports_day',
             'reports_date',
             'reports_result',
+
+            'subcategories_index',
+            'subcategories_create',
+            'subcategories_show',
+            'subcategories_edit',
+            'subcategories_destroy',
+
+            
         ];
 
         foreach ($permissions as $permission) {

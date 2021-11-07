@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Category\StoreRequest;
-use App\Http\Requests\Category\UpdateRequest;
-use App\Models\Category;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 
-class CategoryController extends Controller
+class SubCategoryController extends Controller
 {
     public function __construct()
     {
@@ -22,10 +20,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        abort_if(Gate::denies('category_index'), 403);
-        $categories = Category::all();
+        abort_if(Gate::denies('subcategories_index'), 403);
+        $subcategories = SubCategory::all();
 
-        return view('admin.category.index', compact('categories'));
+        return view('admin.subcategories.index', compact('subcategories'));
     }
 
     /**
@@ -35,9 +33,9 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        abort_if(Gate::denies('category_create'), 403);
+        abort_if(Gate::denies('subcategories_create'), 403);
 
-        return view('admin.category.create');
+        return view('admin.subcategories.create');
     }
 
     /**
@@ -46,11 +44,11 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreRequest $request, Category $category)
+    public function store(Request $request, SubCategory $subcategories)
     {
-        $category->my_store($request);
+        $subcategories->my_store($request);
 
-        return redirect()->route('categories.index');
+        return redirect()->route('subcategories.index');
     }
 
     /**
@@ -59,11 +57,11 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show(SubCategory $subcategories)
     {
-        abort_if(Gate::denies('category_show'), 403);
+        abort_if(Gate::denies('subcategories_show'), 403);
 
-        return view('admin.category.show', compact('category'));
+        return view('admin.subcategories.show', compact('subcategories'));
     }
 
     /**
@@ -72,11 +70,11 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit(SubCategory $subcategories)
     {
-        abort_if(Gate::denies('category_edit'), 403);
+        abort_if(Gate::denies('subcategories_edit'), 403);
 
-        return view('admin.category.edit', compact('category'));
+        return view('admin.subcategories.edit', compact('subcategories'));
     }
 
     /**
@@ -86,11 +84,11 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateRequest $request, Category $category)
+    public function update(Request $request, SubCategory $subcategories)
     {
-        $category->my_update($request);
+        $subcategories->my_update($request);
 
-        return redirect()->route('categories.index');
+        return redirect()->route('subcategories.index');
     }
 
     /**
@@ -99,12 +97,12 @@ class CategoryController extends Controller
      * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Category $category)
+    public function destroy(SubCategory $subcategories)
     {
-        abort_if(Gate::denies('category_destroy'), 403);
+        abort_if(Gate::denies('subcategories_destroy'), 403);
 
-        $category->delete();
+        $subcategories->delete();
 
-        return redirect()->route('categories.index');
+        return redirect()->route('subcategories.index');
     }
 }

@@ -51,16 +51,11 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreRequest $request)
+    public function store(StoreRequest $request, Product $product)
     {
-        
-        $prod = Product::create($request->all());
-        
-        $prod->update([
-            'code' => 'COD' . $prod->id
-        ]);
-        
-        if($request->hasFile('image')){
+        $product->my_store($request);
+
+        /* if($request->hasFile('image')){
             $file = $request->file('image');
             $image_name = time() . '_' . $file->getClientOriginalName();
             $file->move(public_path("/image"), $image_name);
@@ -68,7 +63,7 @@ class ProductController extends Controller
             $prod->update([
                 'image' => $image_name
             ]);
-        }
+        }  */
 
         return redirect()->route('products.index');
     }
@@ -111,9 +106,9 @@ class ProductController extends Controller
      */
     public function update(UpdateRequest $request, Product $product)
     {
-        $product->update($request->all());
+        $product->my_update($request);
 
-        if($request->hasFile('image')){
+        /* if($request->hasFile('image')){
             $file = $request->file('image');
             $image_name = time() . '_' . $file->getClientOriginalName();
             $file->move(public_path("/image"), $image_name);
@@ -121,7 +116,7 @@ class ProductController extends Controller
             $product->update([
                 'image' => $image_name
             ]);
-        }
+        } */
 
         return redirect()->route('products.index');
     }
