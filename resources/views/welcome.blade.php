@@ -11,7 +11,7 @@
             <div class="hero-slider-area">
                 <div class="slider-wrapper-area3">
                     <div class="hero-slider-active hero__3 slick-dot-style hero-dot">
-                        <div class="single-slider d-flex align-items-center" style="background-image: url(assets/img/slider/slider3_bg1.jpg);">
+                        <div class="single-slider d-flex align-items-center" style="background-image: url(galio/assets/img/slider/slider3_bg1.jpg);">
                             <div class="container">
                                 <div class="slider-main-content">
                                     <div class="slider-text">
@@ -22,7 +22,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="single-slider d-flex align-items-center" style="background-image: url(assets/img/slider/slider3_bg2.jpg);">
+                        <div class="single-slider d-flex align-items-center" style="background-image: url(galio/assets/img/slider/slider3_bg2.jpg);">
                             <div class="container">
                                 <div class="slider-main-content">
                                     <div class="slider-text">
@@ -37,285 +37,7 @@
                 </div>
             </div>
             <!-- hero slider end -->
-    
-            <!-- home banner area start -->
-            {{-- <div class="banner-area mt-34 mb-4 mt-xs-0">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-5 order-1">
-                            <div class="img-container img-full fix">
-                                <a href="#">
-                                    <img src="assets/img/banner/banner_left2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 order-sm-3 mt-sm-30">
-                            <div class="img-container img-full fix mb-30">
-                                <a href="#">
-                                    <img src="assets/img/banner/banner_static_top4.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="img-container img-full fix mb-30">
-                                <a href="#">
-                                    <img src="assets/img/banner/banner_static_top5.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-7 order-2 order-md-3 mt-xs-30">
-                            <div class="img-container img-full fix">
-                                <a href="#">
-                                    <img src="assets/img/banner/banner_static_top6.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-            <!-- home banner area end -->
-    
-            <!-- product wrapper area strat -->
-            {{-- <div class="product-feature-wrapper mb-lg-6">
-                <div class="container">
-                    <div class="row">
-                        <!-- hot deals area start -->
-                        <div class="col-lg-6">
-                            <div class="hot-deals-wrap3 mb-30 mb-md-36 mb-sm-22 mt-xs-28">
-                                <div class="section-title-2 d-flex justify-content-between mb-28">
-                                     <h3>hot deals</h3>
-                                     <div class="category-append"></div>
-                                </div> <!-- section title end -->
-                                <div class="deals-carousel-active2 slick-padding slick-arrow-style">
-                                    <!-- product single item start -->
-                                    <div class="product-item fix">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html">
-                                                <img src="assets/img/product/product-f-1.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-f-2.jpg" class="img-sec" alt="">
-                                            </a>
-                                            <div class="product-label">
-                                                <span>hot</span>
-                                            </div>
-                                            <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">vertual product 01</a></h4>
-                                            <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
-                                                <div class="ratings">
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <div class="pro-review">
-                                                        <span>1 review(s)</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product single item end -->
-                                    <!-- product single item start -->
-                                    <div class="product-item fix">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html">
-                                                <img src="assets/img/product/product-f-3.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-f-4.jpg" class="img-sec" alt="">
-                                            </a>
-                                            <div class="product-label">
-                                                <span>hot</span>
-                                            </div>
-                                            <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">vertual product 01</a></h4>
-                                            <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
-                                                <div class="ratings">
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <div class="pro-review">
-                                                        <span>1 review(s)</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product single item end -->
-                                    <!-- product single item start -->
-                                    <div class="product-item fix">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html">
-                                                <img src="assets/img/product/product-f-2.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-f-1.jpg" class="img-sec" alt="">
-                                            </a>
-                                            <div class="product-label">
-                                                <span>hot</span>
-                                            </div>
-                                            <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">vertual product 01</a></h4>
-                                            <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
-                                                <div class="ratings">
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <div class="pro-review">
-                                                        <span>1 review(s)</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product single item end -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- hot deals area end -->
-                        <!-- most view area start -->
-                        <div class="col-lg-6">
-                            <div class="hot-deals-wrap3 mb-30 mb-md-22 mb-sm-22 mt-sm-14">
-                                <div class="section-title-2 d-flex justify-content-between mb-28">
-                                     <h3>featured</h3>
-                                     <div class="category-append"></div>
-                                </div> <!-- section title end -->
-                                <div class="deals-carousel-active2 slick-padding slick-arrow-style">
-                                    <!-- product single item start -->
-                                    <div class="product-item fix">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html">
-                                                <img src="assets/img/product/product-s-5.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-s-6.jpg" class="img-sec" alt="">
-                                            </a>
-                                            <div class="product-label">
-                                                <span>hot</span>
-                                            </div>
-                                            <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">vertual product 01</a></h4>
-                                            <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
-                                                <div class="ratings">
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <div class="pro-review">
-                                                        <span>1 review(s)</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product single item end -->
-                                    <!-- product single item start -->
-                                    <div class="product-item fix">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html">
-                                                <img src="assets/img/product/product-s-3.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-s-4.jpg" class="img-sec" alt="">
-                                            </a>
-                                            <div class="product-label">
-                                                <span>hot</span>
-                                            </div>
-                                            <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">vertual product 01</a></h4>
-                                            <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
-                                                <div class="ratings">
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <div class="pro-review">
-                                                        <span>1 review(s)</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product single item end -->
-                                    <!-- product single item start -->
-                                    <div class="product-item fix">
-                                        <div class="product-thumb">
-                                            <a href="product-details.html">
-                                                <img src="assets/img/product/product-s-1.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-s-2.jpg" class="img-sec" alt="">
-                                            </a>
-                                            <div class="product-label">
-                                                <span>hot</span>
-                                            </div>
-                                            <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="product-content">
-                                            <h4><a href="product-details.html">vertual product 01</a></h4>
-                                            <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
-                                                <div class="ratings">
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span class="good"><i class="fa fa-star"></i></span>
-                                                    <span><i class="fa fa-star"></i></span>
-                                                    <div class="pro-review">
-                                                        <span>1 review(s)</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product single item end -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- most view area end -->
-                    </div>
-                </div>
-            </div> --}}
-            <!-- product wrapper area end -->
-    
+
             <!-- page wrapper start -->
             <div class="main-home-wrapper">
                 <div class="container">
@@ -331,7 +53,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-1.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -361,7 +83,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-2.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-2.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -391,7 +113,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-3.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-3.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -421,7 +143,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-4.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-4.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -451,7 +173,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-b-1.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-b-1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -481,7 +203,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-b-2.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-b-2.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -511,7 +233,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-b-3.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-b-3.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -541,7 +263,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-b-4.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-b-4.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -571,7 +293,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-f-1.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-f-1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -606,7 +328,7 @@
                             <div class="banner-statistic pt-6 pb-34">
                                 <div class="img-container fix img-full">
                                     <a href="#">
-                                        <img src="assets/img/banner/home3_static5.jpg" alt="">
+                                        <img src="galio/assets/img/banner/home3_static5.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -638,8 +360,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-s-1.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-2.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-s-1.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-2.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -673,8 +395,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-s-3.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-4.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-s-3.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-4.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -708,8 +430,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-s-5.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-6.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-s-5.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-6.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -743,8 +465,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-s-6.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-5.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-s-6.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-5.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -778,8 +500,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-s-2.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-3.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-s-2.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-3.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -813,8 +535,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-s-4.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-6.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-s-4.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-6.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -854,8 +576,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-1.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-f-2.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-1.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-f-2.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -889,8 +611,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-3.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-f-4.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-3.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-f-4.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -924,8 +646,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-2.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-4.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-2.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-4.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -959,8 +681,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-4.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-2.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-4.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-2.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -994,8 +716,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-2.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-f-3.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-2.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-f-3.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1029,8 +751,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-b-1.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-b-2.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-b-1.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-b-2.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1070,8 +792,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-1.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-f-2.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-1.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-f-2.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1105,8 +827,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-3.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-f-4.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-3.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-f-4.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1140,8 +862,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-b-2.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-b-4.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-b-2.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-b-4.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1175,8 +897,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-f-3.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-1.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-f-3.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-1.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1210,8 +932,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-b-2.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-b-3.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-b-2.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-b-3.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1245,8 +967,8 @@
                                             <div class="product-item fix">
                                                 <div class="product-thumb">
                                                     <a href="product-details.html">
-                                                        <img src="assets/img/product/product-s-1.jpg" class="img-pri" alt="">
-                                                        <img src="assets/img/product/product-s-2.jpg" class="img-sec" alt="">
+                                                        <img src="galio/assets/img/product/product-s-1.jpg" class="img-pri" alt="">
+                                                        <img src="galio/assets/img/product/product-s-2.jpg" class="img-sec" alt="">
                                                     </a>
                                                     <div class="product-label">
                                                         <span>hot</span>
@@ -1286,36 +1008,7 @@
                 </div>
             </div>
             <!-- page wrapper end -->
-    
-            <!-- home banner area start -->
-            {{-- <div class="banner-area mt-8 mt-lg-28 mb-34 mb-md-0 mb-sm-0 mt-xs-0">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="img-container img-full fix mb-md-30 mb-sm-30">
-                                <a href="#">
-                                    <img src="assets/img/banner/home3_static6.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="img-container img-full fix mb-md-30 mb-sm-30">
-                                <a href="#">
-                                    <img src="assets/img/banner/home3_static7.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="img-container img-full fix mb-md-30 mb-sm-30">
-                                <a href="#">
-                                    <img src="assets/img/banner/home3_static8.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
-            <!-- home banner area end -->
+
     
             <!-- blog-testimonial-product area start -->
             <div class="section">
@@ -1332,7 +1025,7 @@
                                     <div class="blog-item">
                                         <div class="blog-thumb img-full fix">
                                             <a href="blog-details.html">
-                                                <img src="assets/img/blog/img_blog1.jpg" alt="">
+                                                <img src="galio/assets/img/blog/img_blog1.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="blog-content">
@@ -1347,7 +1040,7 @@
                                     <div class="blog-item">
                                         <div class="blog-thumb img-full fix">
                                             <a href="blog-details.html">
-                                                <img src="assets/img/blog/img_blog2.jpg" alt="">
+                                                <img src="galio/assets/img/blog/img_blog2.jpg" alt="">
                                             </a>
                                         </div>
                                         <div class="blog-content">
@@ -1372,7 +1065,7 @@
                                 <div class="testimonial-carousel-active slick-dot-style">
                                     <div class="testimonial-item text-center">
                                         <div class="testimonial-thumb">
-                                            <img src="assets/img/testimonial/team_member1.jpg" alt="">
+                                            <img src="galio/assets/img/testimonial/team_member1.jpg" alt="">
                                         </div>
                                         <div class="testimonial-content">
                                             <h3><a href="#">Elizabeth Taylor</a></h3>
@@ -1381,7 +1074,7 @@
                                     </div> <!-- end single testimonial item -->
                                     <div class="testimonial-item text-center">
                                         <div class="testimonial-thumb">
-                                            <img src="assets/img/testimonial/team_member2.jpg" alt="">
+                                            <img src="galio/assets/img/testimonial/team_member2.jpg" alt="">
                                         </div>
                                         <div class="testimonial-content">
                                             <h3><a href="#">Elizabeth Taylor</a></h3>
@@ -1390,7 +1083,7 @@
                                     </div> <!-- end single testimonial item -->
                                     <div class="testimonial-item text-center">
                                         <div class="testimonial-thumb">
-                                            <img src="assets/img/testimonial/team_member3.jpg" alt="">
+                                            <img src="galio/assets/img/testimonial/team_member3.jpg" alt="">
                                         </div>
                                         <div class="testimonial-content">
                                             <h3><a href="#">Elizabeth Taylor</a></h3>
@@ -1413,7 +1106,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-f-1.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-f-1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1443,7 +1136,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-f-2.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-f-2.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1473,7 +1166,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-f-3.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-f-3.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1503,7 +1196,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-f-4.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-f-4.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1533,7 +1226,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-1.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1563,7 +1256,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-2.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-2.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1605,7 +1298,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-1.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-1.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1635,7 +1328,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-2.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-2.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1665,7 +1358,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-3.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-3.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1695,7 +1388,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-4.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-4.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1725,7 +1418,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-5.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-5.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1755,7 +1448,7 @@
                                         <div class="category-item">
                                             <div class="category-thumb">
                                                 <a href="product-details.html">
-                                                    <img src="assets/img/product/product-s-6.jpg" alt="">
+                                                    <img src="galio/assets/img/product/product-s-6.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="category-content">
@@ -1805,8 +1498,8 @@
                         <div class="product-item fix">
                             <div class="product-thumb">
                                 <a href="product-details.html">
-                                    <img src="assets/img/product/product-f-1.jpg" class="img-pri" alt="">
-                                    <img src="assets/img/product/product-f-2.jpg" class="img-sec" alt="">
+                                    <img src="galio/assets/img/product/product-f-1.jpg" class="img-pri" alt="">
+                                    <img src="galio/assets/img/product/product-f-2.jpg" class="img-sec" alt="">
                                 </a>
                                 <div class="product-label">
                                     <span>hot</span>
@@ -1840,8 +1533,8 @@
                         <div class="product-item fix">
                             <div class="product-thumb">
                                 <a href="product-details.html">
-                                    <img src="assets/img/product/product-s-1.jpg" class="img-pri" alt="">
-                                    <img src="assets/img/product/product-s-2.jpg" class="img-sec" alt="">
+                                    <img src="galio/assets/img/product/product-s-1.jpg" class="img-pri" alt="">
+                                    <img src="galio/assets/img/product/product-s-2.jpg" class="img-sec" alt="">
                                 </a>
                                 <div class="product-label">
                                     <span>new</span>
@@ -1875,8 +1568,8 @@
                         <div class="product-item fix">
                             <div class="product-thumb">
                                 <a href="product-details.html">
-                                    <img src="assets/img/product/product-f-3.jpg" class="img-pri" alt="">
-                                    <img src="assets/img/product/product-f-4.jpg" class="img-sec" alt="">
+                                    <img src="galio/assets/img/product/product-f-3.jpg" class="img-pri" alt="">
+                                    <img src="galio/assets/img/product/product-f-4.jpg" class="img-sec" alt="">
                                 </a>
                                 <div class="product-label">
                                     <span>hot</span>
@@ -1910,8 +1603,8 @@
                         <div class="product-item fix">
                             <div class="product-thumb">
                                 <a href="product-details.html">
-                                    <img src="assets/img/product/product-b-1.jpg" class="img-pri" alt="">
-                                    <img src="assets/img/product/product-b-2.jpg" class="img-sec" alt="">
+                                    <img src="galio/assets/img/product/product-b-1.jpg" class="img-pri" alt="">
+                                    <img src="galio/assets/img/product/product-b-2.jpg" class="img-sec" alt="">
                                 </a>
                                 <div class="product-label">
                                     <span>new</span>
@@ -1945,8 +1638,8 @@
                         <div class="product-item fix">
                             <div class="product-thumb">
                                 <a href="product-details.html">
-                                    <img src="assets/img/product/product-s-3.jpg" class="img-pri" alt="">
-                                    <img src="assets/img/product/product-s-4.jpg" class="img-sec" alt="">
+                                    <img src="galio/assets/img/product/product-s-3.jpg" class="img-pri" alt="">
+                                    <img src="galio/assets/img/product/product-s-4.jpg" class="img-sec" alt="">
                                 </a>
                                 <div class="product-label">
                                     <span>new</span>
@@ -1980,8 +1673,8 @@
                         <div class="product-item fix">
                             <div class="product-thumb">
                                 <a href="product-details.html">
-                                    <img src="assets/img/product/product-s-5.jpg" class="img-pri" alt="">
-                                    <img src="assets/img/product/product-s-6.jpg" class="img-sec" alt="">
+                                    <img src="galio/assets/img/product/product-s-5.jpg" class="img-pri" alt="">
+                                    <img src="galio/assets/img/product/product-s-6.jpg" class="img-sec" alt="">
                                 </a>
                                 <div class="product-label">
                                     <span>new</span>
@@ -2034,25 +1727,25 @@
                         <div class="col-12">
                             <div class="brand-active slick-padding slick-arrow-style">
                                 <div class="brand-item text-center">
-                                    <a href="#"><img src="assets/img/brand/br1.png" alt=""></a>
+                                    <a href="#"><img src="galio/assets/img/brand/br1.png" alt=""></a>
                                 </div>
                                 <div class="brand-item text-center">
-                                    <a href="#"><img src="assets/img/brand/br2.png" alt=""></a>
+                                    <a href="#"><img src="galio/assets/img/brand/br2.png" alt=""></a>
                                 </div>
                                 <div class="brand-item text-center">
-                                    <a href="#"><img src="assets/img/brand/br3.png" alt=""></a>
+                                    <a href="#"><img src="galio/assets/img/brand/br3.png" alt=""></a>
                                 </div>
                                 <div class="brand-item text-center">
-                                    <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
+                                    <a href="#"><img src="galio/assets/img/brand/br4.png" alt=""></a>
                                 </div>
                                 <div class="brand-item text-center">
-                                    <a href="#"><img src="assets/img/brand/br5.png" alt=""></a>
+                                    <a href="#"><img src="galio/assets/img/brand/br5.png" alt=""></a>
                                 </div>
                                 <div class="brand-item text-center">
-                                    <a href="#"><img src="assets/img/brand/br6.png" alt=""></a>
+                                    <a href="#"><img src="galio/assets/img/brand/br6.png" alt=""></a>
                                 </div>
                                 <div class="brand-item text-center">
-                                    <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
+                                    <a href="#"><img src="galio/assets/img/brand/br4.png" alt=""></a>
                                 </div>
                             </div>
                         </div>

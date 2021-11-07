@@ -18,6 +18,48 @@ Route::get('/', function () {
     //return view('auth.login2');
 });
 
+Route::get('/productos', function () {
+    return view('web.shop_grid');
+});
+
+Route::get('/producto/detalle', function () {
+    return view('web.product_details');
+});
+
+Route::get('/micuenta', function () {
+    return view('web.my_account');
+});
+
+Route::get('/login_registro', function () {
+    return view('web.login_register ');
+});
+
+Route::get('/contacto', function () {
+    return view('web.contact');
+});
+
+Route::get('/carrito', function () {
+    return view('web.cart');
+});
+
+Route::get('/blog', function () {
+    return view('web.blog');
+});
+
+Route::get('/blogs/detalles', function () {
+    return view('web.blog_details');
+});
+
+Route::get('/nosotros', function () {
+    return view('web.about');
+});
+
+
+Route::get('/pagar', function () {
+    return view('web.checkout');
+});
+
+
 Route::get('/prueba', function () {
     return view('prueba');
 });
