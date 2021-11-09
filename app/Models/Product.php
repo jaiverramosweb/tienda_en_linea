@@ -46,6 +46,11 @@ class Product extends Model
         return $this->morphToMany(Image::class, 'imageable');
     }
 
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
+
     public function my_store($request)
     {
         $product = self::create([
@@ -61,12 +66,16 @@ class Product extends Model
             'provider_id' => $request->provider_id,
         ]);
 
+        $product->tags()->attach($request->get('tags'));
+
         $this->generarCodigo($product);
+
+        $this->upload_files($request, $product);
     }
 
     public function my_update($request)
     {
-        $product = $this->update([
+        $this->update([
             'code' => $request->code,
             'name' => $request->name,
             'slug' => Str::slug($request->slug, '_'), 
@@ -79,7 +88,9 @@ class Product extends Model
             'provider_id' => $request->provider_id,
         ]);
 
-        $this->generarCodigo($product);
+        $this->tags()->sync($request->get('tags'));
+
+        $this->generarCodigo($this);
     }
     
     public function generarCodigo($product)
@@ -87,5 +98,22 @@ class Product extends Model
         $numero = $product->id;
         $numeroConCeros = str_pad($numero, 8, "0", STR_PAD_LEFT);
         $product->update(['code' => $numeroConCeros]);
+    }
+
+    public function upload_files($request, $product)
+    {
+        $urlImages = [];
+
+        if($request->hasFile('image')) {
+            $images = $request->file('image');
+            foreach($images as $image){
+                $image_name = time().$image->getClientOriginalName();
+                $route = public_path().'/image';
+                $image->move($route, $image_name);
+                $urlImages[]['url'] = '/image/'.$image_name;
+            }
+        }
+
+        $product->images()->createMany($urlImages);
     }
 }

@@ -79,6 +79,12 @@ class PermissionSeeder extends Seeder
             'subcategories_edit',
             'subcategories_destroy',
 
+            'tag_index',
+            'tag_create',
+            'tag_show',
+            'tag_edit',
+            'tag_destroy',
+
             
         ];
 
