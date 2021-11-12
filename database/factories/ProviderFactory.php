@@ -22,7 +22,11 @@ class ProviderFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->unique()->word,
+            'email' => $this->faker->email,
+            'ruc' => $this->faker->unixTime($max = 'now'),
+            'addres' => $this->faker->address,
+            'photo' => $this->faker->tollFreePhoneNumber,
         ];
     }
 }

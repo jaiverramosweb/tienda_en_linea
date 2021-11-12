@@ -82,7 +82,7 @@
                                                     </a>
                                                 @endif
                                             </td>
-                                            <td>{{ $product->category->name }}</td>
+                                            <td>{{ $product->subcategory->name }}</td>
                                             <td>
                                                 {!! Form::open(['route' => ['products.destroy',$product], 'method' => 'DELETE']) !!}
 

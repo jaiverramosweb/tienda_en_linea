@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
-    //return view('auth.login2');
+    //return view('welcome');
+    return view('auth.login2');
 });
 
 Route::get('/productos', function () {
@@ -77,6 +77,7 @@ Route::resource('clients', ClientController::class)->names('clients');
 Route::resource('providers', ProviderController::class)->names('providers');
 
 Route::resource('products', ProductController::class)->names('products');
+Route::post('change_status/products/{product}', [ProductController::class, 'change_status'])->name('products.change.status');
 
 Route::resource('purchases', PurchaseController::class)->names('purchases');
 Route::post('change_status/purchases/{purchase}', [PurchaseController::class, 'change_status'])->name('purchases.change.status');
@@ -88,9 +89,6 @@ Route::post('change_status/sales/{sale}', [PurchaseController::class, 'change_st
 Route::resource('roles', RoleController::class)->names('roles');
 Route::resource('permissions', PermissionController::class)->names('permissions');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 

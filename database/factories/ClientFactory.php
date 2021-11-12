@@ -22,7 +22,12 @@ class ClientFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->unique()->word,
+            'dni' => $this->faker->unique->unixTime($max = 'now'),
+            'ruc' => $this->faker->unixTime($max = 'now'),
+            'address' => $this->faker->address,
+            'phone' => $this->faker->tollFreePhoneNumber,
+            'email' => $this->faker->email,
         ];
     }
 }

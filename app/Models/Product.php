@@ -43,7 +43,7 @@ class Product extends Model
 
     public function images()
     {
-        return $this->morphToMany(Image::class, 'imageable');
+        return $this->morphMany(Image::class, 'imageable');
     }
 
     public function tags()
@@ -56,12 +56,10 @@ class Product extends Model
         $product = self::create([
             'code' => $request->code,
             'name' => $request->name,
-            'slug' => Str::slug($request->slug, '_'), 
+            'slug' => Str::slug($request->name, '_'), 
             'shopt_description' => $request->shopt_description,
             'long_description' => $request->long_description,
-            'stock' => $request->stock,
             'price' => $request->price,
-            'status' => $request->status,
             'subcategory_id' => $request->subcategory_id,
             'provider_id' => $request->provider_id,
         ]);
@@ -81,9 +79,7 @@ class Product extends Model
             'slug' => Str::slug($request->slug, '_'), 
             'shopt_description' => $request->shopt_description,
             'long_description' => $request->long_description,
-            'stock' => $request->stock,
             'price' => $request->price,
-            'status' => $request->status,
             'subcategory_id' => $request->subcategory_id,
             'provider_id' => $request->provider_id,
         ]);
@@ -104,8 +100,8 @@ class Product extends Model
     {
         $urlImages = [];
 
-        if($request->hasFile('image')) {
-            $images = $request->file('image');
+        if($request->hasFile('images')) {
+            $images = $request->file('images');
             foreach($images as $image){
                 $image_name = time().$image->getClientOriginalName();
                 $route = public_path().'/image';

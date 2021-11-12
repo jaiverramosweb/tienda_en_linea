@@ -14,7 +14,10 @@ class SubCategoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'category_id' => rand(1,10),
+            'name' => $this->faker->unique()->word,
+            'slug' => $this->faker->unique()->slug,
+            'description' => $this->faker->sentence(6, true),
         ];
     }
 }

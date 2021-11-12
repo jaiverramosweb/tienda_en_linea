@@ -22,7 +22,10 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->unique()->word,
+            'slug' => $this->faker->unique()->slug,
+            'description' => $this->faker->sentence(6, true),
+            'icon' => $this->faker->randomElement(['icon-fruits', 'icon-beef', 'icon- grape', 'icon-fish'])
         ];
     }
 }

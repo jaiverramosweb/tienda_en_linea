@@ -25,7 +25,7 @@ class CreateProductsTable extends Migration
 
             $table->integer('stock')->default(0);
             $table->string('image')->nullable();
-            $table->decimal('price',12,2);
+            $table->decimal('price',14,2);
             $table->enum('status', ['ACTIVE', 'DEACTIVATED'])->default('ACTIVE');
 
             $table->unsignedBigInteger('subcategory_id');

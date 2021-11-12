@@ -7,6 +7,8 @@ use App\Http\Requests\Product\UpdateRequest;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Provider;
+use App\Models\SubCategory;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 
@@ -40,9 +42,11 @@ class ProductController extends Controller
         abort_if(Gate::denies('product_create'), 403);
 
         $categories = Category::all();
+        $subcategories = SubCategory::all();
         $providers = Provider::all();
+        $tags = Tag::all();
 
-        return view('admin.product.create', compact('categories', 'providers'));
+        return view('admin.product.create', compact('categories', 'subcategories', 'providers', 'tags'));
     }
 
     /**
