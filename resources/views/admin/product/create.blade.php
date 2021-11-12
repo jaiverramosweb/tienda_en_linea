@@ -76,7 +76,7 @@
                         <div class="form-group">
                             <label for="subcategory_id">Subcategoria</label>
                             <select class="form-control" name="subcategory_id" id="subcategory_id">
-                                <option> == Seleccione una Categoria == </option>
+                                <option> == Seleccione una Sub Categoria == </option>
                                 @foreach ($subcategories as $subcategory)
                                 <option value="{{ $subcategory->id }}">{{ $subcategory->name }}</option>                                      
                                 @endforeach
@@ -94,12 +94,13 @@
                         </div>
 
                         <div class="form-group">
-                        <label for="tags">Etiquetas</label>
-                        <select class="form-control" name="tags[]" id="tags" multiple>
+                            <label for="tags">Etiquetas</label>
+                            <select class="form-control" name="tags[]" id="tags" multiple>
+                                <option> == Seleccione Etiquetas == </option>
                                 @foreach ($tags as $tag)
                                     <option value="{{ $tag->id }}">{{ $tag->name }}</option>                              
                                 @endforeach
-                        </select>
+                            </select>
                         </div>
 
                     </div>
@@ -111,7 +112,7 @@
             <div class="col-12 grid-margin">
                 <div class="card">
                     <div class="card-body">
-                      <h4 class="card-title">You can set the height</h4>
+                      <h4 class="card-title">Imagenes del producto</h4>
                       <input type="file" name="images[]" class="dropify" data-height="300" multiple/>
                     </div>
                 </div>
@@ -131,6 +132,11 @@
     <script src="melody/js/dropzone.js"></script>
     <script src="melody/js/dropify.js"></script>
     {!! Html::script('select2/dist/js/select2.min.js ') !!}
+    {!! Html::script('ckeditor/ckeditor.js ') !!}
+    
+    <script>
+        CKEDITOR.replace('long_description');
+    </script>
 
     <script>
         $(document).ready(function() {
