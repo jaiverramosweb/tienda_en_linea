@@ -96,9 +96,11 @@ class ProductController extends Controller
         abort_if(Gate::denies('product_edit'), 403);
 
         $categories = Category::all();
+        $subcategories = SubCategory::all();
         $providers = Provider::all();
+        $tags = Tag::all();
 
-        return view('admin.product.edit', compact('product', 'categories', 'providers'));
+        return view('admin.product.edit', compact('product', 'categories', 'providers', 'subcategories', 'tags'));
     }
 
     /**

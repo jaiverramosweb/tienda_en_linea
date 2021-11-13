@@ -47,13 +47,7 @@
                             <div class="form-group">
                                 <label for="long_description">Descripción</label>
                                 <textarea class="form-control" name="long_description" id="long_description" rows="8"></textarea>
-                            </div>
-
-                            {{-- <div class="custom-file mb-4">
-                                <input type="file" class="custom-file-input" id="image" name="image" lang="es">
-                                <label for="image" class="custom-file-label">Seleccionar Archivo</label>
-                            </div> --}}
-  
+                            </div>  
 
                     </div>
                 </div>
