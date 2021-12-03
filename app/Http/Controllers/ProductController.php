@@ -96,11 +96,10 @@ class ProductController extends Controller
         abort_if(Gate::denies('product_edit'), 403);
 
         $categories = Category::all();
-        $subcategories = SubCategory::all();
         $providers = Provider::all();
         $tags = Tag::all();
 
-        return view('admin.product.edit', compact('product', 'categories', 'providers', 'subcategories', 'tags'));
+        return view('admin.product.edit', compact('product', 'categories', 'providers', 'tags'));
     }
 
     /**
@@ -113,16 +112,6 @@ class ProductController extends Controller
     public function update(UpdateRequest $request, Product $product)
     {
         $product->my_update($request);
-
-        /* if($request->hasFile('image')){
-            $file = $request->file('image');
-            $image_name = time() . '_' . $file->getClientOriginalName();
-            $file->move(public_path("/image"), $image_name);
-
-            $product->update([
-                'image' => $image_name
-            ]);
-        } */
 
         return redirect()->route('products.index');
     }
@@ -150,5 +139,21 @@ class ProductController extends Controller
             $product->update(['status' => 'ACTIVE']);
         }
         return redirect()->back();
+    }
+
+    public function upload_image(Request $request,$id)
+    {
+        /* dd($request->hasFile('image')); */
+        $product = Product::findOrFail($id);
+        if($request->hasFile('image')){
+            $file = $request->file('image');
+            $image_name = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path("/image"), $image_name);
+            $urlimage = '/image/'. $image_name;
+        }
+
+        $product->images()->create([
+            'url' => $urlimage,
+        ]);
     }
 }

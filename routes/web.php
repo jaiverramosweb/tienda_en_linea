@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\PermissionController;
@@ -79,6 +80,8 @@ Route::resource('providers', ProviderController::class)->names('providers');
 Route::resource('products', ProductController::class)->names('products');
 Route::post('change_status/products/{product}', [ProductController::class, 'change_status'])->name('products.change.status');
 
+Route::post('upload/product/{id}/image', [ProductController::class, 'upload_image'])->name('upload.image');
+
 Route::resource('purchases', PurchaseController::class)->names('purchases');
 Route::post('change_status/purchases/{purchase}', [PurchaseController::class, 'change_status'])->name('purchases.change.status');
 Route::get('purchases/pdf/{purchase}', [PurchaseController::class, 'pdf'])->name('purchases.pdf');
@@ -89,6 +92,7 @@ Route::post('change_status/sales/{sale}', [PurchaseController::class, 'change_st
 Route::resource('roles', RoleController::class)->names('roles');
 Route::resource('permissions', PermissionController::class)->names('permissions');
 
+Route::get('get_subcategories', [AjaxController::class, 'get_subcategories'])->name('get_subcategories');
 
 Auth::routes();
 

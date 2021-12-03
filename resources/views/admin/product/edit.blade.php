@@ -30,26 +30,46 @@
 
                             <div class="form-group">
                                 <label for="name">Nombre</label>
-                                <input type="text" name="name" id="name" class="form-control" value="{{ old('name', $product->name) }}" required>
+                                <input type="text" name="name" id="name" class="form-control @error('name') is-invalid @enderror" value="{{ old('name', $product->name) }}">
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
                             
                             <div class="form-group">
                                 <label for="price">Precio</label>
-                                <input type="number" name="price" id="price" class="form-control" value="{{ old('price', $product->price) }}" required>
+                                <input type="number" name="price" id="price" class="form-control @error('name') is-invalid @enderror" value="{{ old('price', $product->price) }}">
+                                @error('price')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>
 
                             <div class="form-group">
                             <label for="shopt_description">Extracto</label>
-                            <textarea class="form-control" name="shopt_description" id="shopt_description" rows="3">
+                            <textarea class="form-control @error('name') is-invalid @enderror" name="shopt_description" id="shopt_description" rows="3">
                                 {{ old('shopt_description', $product->shopt_description) }}
                             </textarea>
+                            @error('shopt_description')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                             </div>
 
                             <div class="form-group">
                                 <label for="long_description">Descripción</label>
-                                <textarea class="form-control" name="long_description" id="long_description" rows="8">
+                                <textarea class="form-control @error('name') is-invalid @enderror" name="long_description" id="long_description" rows="8">
                                     {{ old('long_description', $product->long_description) }}
                                 </textarea>
+                                @error('long_description')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
                             </div>  
 
                     </div>
@@ -72,11 +92,7 @@
                         <div class="form-group">
                             <label for="subcategory_id">Subcategoria</label>
                             <select class="form-control" name="subcategory_id" id="subcategory_id">
-                                @foreach ($subcategories as $subcategory)
-                                <option value="{{ $subcategory->id }}"
-                                {{ old('subcategory_id', $product->subcategory_id) == $subcategory->id ? 'selected' : '' }}    
-                                >{{ $subcategory->name }}</option>                                      
-                                @endforeach
+                                <option disabled selected>-- Seleccione una categoria --</option>                                
                             </select>
                         </div>
 
@@ -157,11 +173,23 @@
     {!! Html::script('select2/dist/js/select2.min.js') !!}
     {!! Html::script('ckeditor/ckeditor.js') !!}
     {!! Html::script('melody/js/light-gallery.js') !!}
-    {!! Html::script('melody/js/jquery-file-upload.js') !!}
+    {{-- {!! Html::script('melody/js/jquery-file-upload.js') !!} --}}
 
     <script>
         CKEDITOR.replace('long_description');
     </script>
+
+<script>
+    (function($) {
+    'use strict';
+    if ($("#fileuploader").length) {
+        $("#fileuploader").uploadFile({
+        url: "/upload/product/{{$product->id}}/image",
+        fileName: "image",
+        });
+    }
+    })(jQuery);
+</script>
 
     <script>
         $(document).ready(function() {
@@ -170,5 +198,27 @@
             $('#provider_id').select2();
             $('#tags').select2();                        
         });
+</script>
+
+<script>
+    var category = $('#category');
+    var subcategory_id = $('#subcategory_id');
+
+    category.change(function(){
+        $.ajax({
+            url: "{{ route('get_subcategories') }}",
+            method: 'GET',
+            data:{
+                category: category.val(),
+            },
+            success: function(data){
+                subcategory_id.empty();
+                subcategory_id.append('<option disabled selected>-- Seleccione una Subcategoria --</option>');
+                $.each(data, function(index, element){
+                    subcategory_id.append('<option value="'+ element.id +'">'+ element.name +'</option>');
+                })
+            }
+        })
+    });
 </script>
 @endsection
